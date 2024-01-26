@@ -1,0 +1,7 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <ActionBar title="Map Tester" icon="" />
+
+    <StackLayout class="p-20">
+        <Button text="Open Map" tap="onOpenMapTap" class="-primary" />
+    </StackLayout>
+</Page>

@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+  xmlns:map="@nativescript/google-maps"
+  navigatingTo="onNavigatingTo" class="page">
+  <Page.actionBar>
+    <ActionBar title="MapTester" class="action-bar">
+      <NavigationButton text="Back" android.systemIcon="ic_menu_back" tap="onBackTap"/>
+    </ActionBar>
+  </Page.actionBar>
+  <GridLayout >
+    <map:MapView id="locmap" lat="35.756942" lng="-80.3026296" zoom="6" 
+      ready="onMapReady" infoWindowTap="onInfoWindowTap" markerInfoContents="onMarkerInfoContents" >
+    </map:MapView>
+  </GridLayout>
+</Page>
